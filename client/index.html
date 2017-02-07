@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Crowd App</title>
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    
+    <div id="skills">Loading skills...</div>
+    <script id="skills-template" type="x-tmpl-mustache">
+        Skills: {{ skills }}
+    </script>
+
+    <div id="users">Loading users...</div>
+    <script id="users-template" type="x-tmpl-mustache">
+        Users: {{ users }}
+    </script>
+
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/sammy/lib/sammy.js"></script>
+    <script src="vendor/mustache.js/mustache.min.js"></script>
+    <script src="scripts/jsc-http.js"></script>
+    <script src="scripts/jsc-ctrl.js"></script>
+    <script src="scripts/jsc-main.js"></script>
+</body>
+
+</html>

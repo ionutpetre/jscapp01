@@ -1,0 +1,21 @@
+{
+  "name": "jscapp01",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  },
+  "dependencies": {
+    "mustache.js": "mustache#^2.3.0",
+    "bootstrap": "^3.3.7",
+    "sammy": "^0.7.6"
+  },
+  "devDependencies": {}
+}
