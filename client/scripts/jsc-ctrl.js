@@ -1,10 +1,21 @@
 var jscCtrl = (function ($) {
     return {
-        displaySkills: function (skills) {
-            var template = $('#skills-template').html();
+
+        displayUsers: function (template, skills, users) {
             Mustache.parse(template);
-            var rendered = Mustache.render(template, { skills: skills });
-            $('#skills').html(rendered);
+            var rendered = Mustache.render(template, {
+                skills: skills, users: users
+            });
+            $('#jsc-summary').html(rendered);
+        },
+
+        displaySkills: function (template, skills) {
+            Mustache.parse(template);
+            var rendered = Mustache.render(template, {
+                skills: skills
+            });
+            $('#jsc-skills').html(rendered);
         }
+
     };
 })($);
